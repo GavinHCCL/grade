@@ -23,9 +23,11 @@ while program == "running":
     who = input("\nWho do you want to change?\n").lower()
     if who in students:
       student = students[who]
-      grade = input("\nFirst grade to change:\n").upper()
-      if grade in grades:
-          student[0] = grade
+      grade1 = input("\nFirst grade to change:\n").upper()
+      if grade1 in grades:
+          student[0] = grade1
+          grade2 = input("\nSecond grade to change:\n")
+          student[1] = grade2
 
 if program == "stop":
   print("Shutting down.")
